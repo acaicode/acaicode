@@ -7,7 +7,8 @@
     "clean": "hexo clean",
     "deploy": "hexo deploy",
     "server": "hexo server",
-    "forced": "git pull && git add -A && git commit -m 'backup' && git push origin backup && hexo cl && hexo g && hexo d"
+    "forced": "git pull && git add -A && git commit -m 'backup' && git push origin backup && hexo clean && hexo generate && hexo deploy",
+    "change": "hexo server"
   },
   "hexo": {
     "version": "6.2.0"
